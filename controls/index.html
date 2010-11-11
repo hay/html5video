@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <video id="v1" src="../bin/video.ogg"></video>
+
+    <div id="c1">
+        <button class="play">play</button>
+        <button class="pause">pause</button>
+        <button class="mute">mute</button>
+    </div>
+
+    <input />
+
+    <script src="../lib/jquery.js"></script>
+    <script>
+    $(function() {
+        function action(a) {
+            var v = $("#v1").get()[0];
+            if (a == "play") v.play();
+            if (a == "pause") v.pause();
+            if (a == "mute") v.volume = 0;
+            return false;
+        }
+
+        $("#c1 button").click(function() {
+            action($(this).text());
+        });
+
+        $("input").keyup(function() {
+            action($(this).val());
+        });
+    });
+    </script>
+</body>
+</html>

@@ -8,7 +8,7 @@
             height: 300px;
             background: red;
         }
-        
+
         .rot {
             float: left;
             margin: 20px;
@@ -17,12 +17,12 @@
 </head>
 <body>
     <div id="box" class="rot"></div>
-    
-    <img src="../bin/img.jpg" class="rot" width=320 />
-    
-    <video src="../video.ogg" class="rot" width=320 controls />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <img src="../bin/img.jpg" class="rot" width=320 />
+
+    <video src="../bin/video.ogg" class="rot" width=320 controls autoplay />
+
+    <script src="../lib/jquery.js"></script>
     <script>
     (function($) {
         $(".rot").click(function() {
