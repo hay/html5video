@@ -64,18 +64,18 @@ Introduction
 Code
 ====
     <video src="video.ogg" controls>I can not haz HTML5 video :(</video>
-    
+
 <video src="../bin/video.ogg" controls="controls"></video>
 
 Code
 ====
     <video src="video.ogg" width=640 height=480 preload autoplay controls/>
-    
+
 <video src="../bin/video.ogg" controls="controls" width="640" height="480"></video>
 
 Code
 ====
-* As simple as that? 
+* As simple as that?
 * No :(
 
 Codecs, codecs, codecs
@@ -99,13 +99,13 @@ H264 / MPEG4
 Real world code
 ===============
     <!-- From http://diveintohtml5.org/video.html#markup -->
-    <video width="320" height="240" controls> 
-        <source src="pr6.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> 
-        <source src="pr6.webm" type='video/webm; codecs="vp8, vorbis"'> 
-        <source src="pr6.ogv" type='video/ogg; codecs="theora, vorbis"'> 
+    <video width="320" height="240" controls>
+        <source src="pr6.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="pr6.webm" type='video/webm; codecs="vp8, vorbis"'>
+        <source src="pr6.ogv" type='video/ogg; codecs="theora, vorbis"'>
         <!-- Some Flash fallback -->
     </video>
-    
+
 Making things easier
 ====================
 <span style="font-size:150px;margin:0 auto;">JavaScript</span>
@@ -120,7 +120,7 @@ Video at VPRO
 * Most of it in Windows Media formats
 * Some of it in H264
 * Realvideo :)
-* So.. no HTML5? 
+* So.. no HTML5?
 
 Canvas
 ======
@@ -149,15 +149,24 @@ How?
 ====
 * One generic jQuery plugin: `jquery.htmlplayer`
 * Lots of canvas plugins that abstract away specific technology to generic API
-    * `jquery.slmediacanvas`
-    * `jquery.ugslmediacanvas`
-    * `jquery.htmlvideomediacanvas
+    * `jquery.slmediacanvas` --> Generic Silverlight player
+    * `jquery.ugslmediacanvas` --> Uitzending Gemist player
+    * `jquery.htmlvideomediacanvas` --> HTML5 video
+* Could do this with any other video canvas
+* YouTube, or even a slideshow
 * A little CSS, a few images
-* [There you have it!](http://localhost/frontend/trunk/htmlplayer/doc/tester/)
+* [There you have it!](http://localhost/vpro/frontend/trunk/htmlplayer/doc/tester/)
 
 Real world
 ==========
 * [Holland Doc](http://www.hollanddoc.nl)
-* [Labyrint)(http://vpro.nl/labyrint)
+* [Labyrint](http://vpro.nl/labyrint)
 * [Kiesop3](http://kiesop3.vpro.nl)
 * [Geschiedenis](http://geschiedenis.vpro.nl)
+
+Thanks!
+=======
+* [@huskyr](http://twitter.com/huskyr)
+* [github](http://github.com/hay)
+
+Slides available under [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.nl)
