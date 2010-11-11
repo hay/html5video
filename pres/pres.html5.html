@@ -561,6 +561,21 @@
         </div>
                 
         <div class="slide">
+          <header><h1 id="other-cool-stuf">Other cool stuf</h1></header>
+          <section class="small">
+              <ul>
+  <li><a href="http://paulrouget.com/">Stuff from Mozilla&rsquo;s Paul Rouget</a></li>
+  <li><a href="https://people.mozilla.com/~prouget/demos/green/green.xhtml">Green screen</a></li>
+  <li><a href="https://people.mozilla.com/~prouget/demos/mashup/video.xhtml">SVG filters</a></li>
+  <li><a href="https://people.mozilla.com/~prouget/demos/srt/index2.xhtml">Subtitles</a></li>
+</ul>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
           <header><h1 id="introduction">Introduction</h1></header>
           <section class="small">
               <ul>
@@ -657,7 +672,8 @@
         <div class="slide">
           <header><h1 id="real-world-code">Real world code</h1></header>
           <section class="small">
-              <pre><code>&lt;video width="320" height="240" controls&gt; 
+              <pre><code>&lt;!-- From http://diveintohtml5.org/video.html#markup --&gt;
+&lt;video width="320" height="240" controls&gt; 
     &lt;source src="pr6.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'&gt; 
     &lt;source src="pr6.webm" type='video/webm; codecs="vp8, vorbis"'&gt; 
     &lt;source src="pr6.ogv" type='video/ogg; codecs="theora, vorbis"'&gt; 
@@ -684,6 +700,111 @@
           <header><h1 id="using-javascript">Using JavaScript</h1></header>
           <section class="small">
               <p><a href="../controls/index.html">Example</a></p>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1 id="video-at-vpro">Video at VPRO</h1></header>
+          <section class="small">
+              <ul>
+  <li>Lots of video</li>
+  <li>Most of it in Windows Media formats</li>
+  <li>Some of it in H264</li>
+  <li>Realvideo :)</li>
+  <li>So.. no HTML5? </li>
+</ul>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1 id="canvas">Canvas</h1></header>
+          <section class="small">
+              <ul>
+  <li>It gets more complicated</li>
+  <li>Silverlight player for stuff on UitzendingGemist.nl</li>
+  <li>But not everything is on UitzendingGemist.nl…</li>
+  <li>Two different players?</li>
+  <li>Different interfaces?</li>
+</ul>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1 id="abstraction">Abstraction</h1></header>
+          <section class="small">
+              <ul>
+  <li>Abstract away what&rsquo;s video and what&rsquo;s a certain technology</li>
+  <li>&lsquo;duration&rsquo;, &lsquo;currentTime&rsquo;, &lsquo;vidpos&rsquo;, etc</li>
+  <li>We need a generic API for video interfacing</li>
+</ul>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1 id="surprise">Surprise…</h1></header>
+          <section class="small">
+              <p><span style="font-size:150px;margin:0 auto;">HTML5 <code>&lt;video&gt;</code></span></p>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1 id="api">API</h1></header>
+          <section class="small">
+              <ul>
+  <li>A generic API for controlling videos</li>
+  <li>Standard events</li>
+</ul>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1 id="how">How?</h1></header>
+          <section class="small">
+              <ul>
+  <li>One generic jQuery plugin: <code>jquery.htmlplayer</code></li>
+  <li>Lots of canvas plugins that abstract away specific technology to generic API
+    <ul>
+      <li><code>jquery.slmediacanvas</code></li>
+      <li><code>jquery.ugslmediacanvas</code></li>
+      <li>`jquery.htmlvideomediacanvas</li>
+    </ul>
+  </li>
+  <li>A little CSS, a few images</li>
+  <li><a href="http://localhost/frontend/trunk/htmlplayer/doc/tester/">There you have it!</a></li>
+</ul>
+
+
+
+          </section>
+        </div>
+                
+        <div class="slide">
+          <header><h1 id="real-world">Real world</h1></header>
+          <section class="small">
+              <ul>
+  <li><a href="http://www.hollanddoc.nl">Holland Doc</a></li>
+  <li>[Labyrint)(http://vpro.nl/labyrint)</li>
+  <li><a href="http://kiesop3.vpro.nl">Kiesop3</a></li>
+  <li><a href="http://geschiedenis.vpro.nl">Geschiedenis</a></li>
+</ul>
 
           </section>
         </div>
